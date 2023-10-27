@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "1",
+        "name": "John Doe",
+        "img": "https://i.ibb.co/RSVgkVv/1.jpg",
+        "facebook_id": "person1_fb_id",
+        "instagram_id": "person1_instagram_id",
+        "linkedin_id": "person1_linkedin_id"
+    },
+    {
+        "_id": "2",
+        "name": "Jane Smith",
+        "img": "https://i.ibb.co/s5CVS4F/2.jpg",
+        "facebook_id": "person2_fb_id",
+        "instagram_id": "person2_instagram_id",
+        "linkedin_id": "person2_linkedin_id"
+    },
+    {
+        "_id": "3",
+        "name": "David Johnson",
+        "img": "https://i.ibb.co/GpV5JBq/3.jpg",
+        "facebook_id": "person3_fb_id",
+        "instagram_id": "person3_instagram_id",
+        "linkedin_id": "person3_linkedin_id"
+    }
+    
+]

@@ -8,14 +8,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { router } from './Routes/router';
+import AuthProvider from './providers/AuthProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <div className='lg:max-w-screen-xl mx-auto md:max-w-3xl sm:max-w-sm'>
-   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
- </div>
+  <div className='lg:max-w-screen-xl mx-auto md:max-w-3xl sm:max-w-sm'>
+    <React.StrictMode>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </React.StrictMode>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

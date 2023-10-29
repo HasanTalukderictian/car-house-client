@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import logo from '../../../src/assets/images/login/login.svg';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const SignUp = () => {
      
@@ -13,13 +14,21 @@ const SignUp = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        const user = {name, email, password};
-        console.log(user);
+        
+     
 
         createUser(email,password)
         .then(result => {
             const user = result.user;
-            console.log(user);
+            console.log('created user', user)
+            form.reset();
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your Account has been Create',
+                showConfirmButton: false,
+                timer: 1500
+              })
         })
         .catch(error => console.log(error))
     }
